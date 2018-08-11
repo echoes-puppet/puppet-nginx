@@ -9,7 +9,7 @@ class nginx::service(
   file { 'nginx_service':
     ensure     => $ensure,
     name       => $service_name,
-    enable     => $enable,
+    #enable     => $enable,
     hasstatus  => $hasstatus,
     hasrestart => $hasrestart,
     pattern    => $pattern,
